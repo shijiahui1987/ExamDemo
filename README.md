@@ -1,11 +1,14 @@
+  
+<a href="https://travis-ci.org/OwenTse/ExamDemo"><img src="https://travis-ci.org/OwenTse/ExamDemo.svg?branch=master"></a>
 # 考试前准备
 请大家提前下载和安装以下软件：<br/>
 1、JDK 1.8+ https://java.com/zh_CN/download/<br/>
 2、IntelliJ (推荐)https://www.jetbrains.com/idea/download/ （不推荐Eclipse）<br/>
-3、Git Bash命令行 （https://msysgit.github.io/ 或 https://www.sourcetreeapp.com/）<br/>
+3、Git Bash命令行 （https://msysgit.github.io/ 或 https://www.sourcetreeapp.com/ ）<br/>
 4、Maven https://maven.apache.org/download.cgi<br/>
-5、将该工程fork到自己Github下<br/>
-6、下载到自己的IDE里面，保证环境运行没有问题<br/>
+5、将该工程fork到自己Github下（fork按钮在github工程页面右上角）<br/>
+6、通过 git clone 命令将刚刚fork过去的代码工程下载（注意是clone 你自己的github账号下的代码）<br/>
+7、导入到IDE中，保证环境运行没有问题<br/>
 <hr/>
 <h1>考试提醒</h1>
 1、考题会在考试开始前上传至该工程，只需要重新pull即可更新程序框架和单元测试代码<br/>
@@ -19,3 +22,4 @@
 9、关于代码提交提交到你自己的github从该工程fork过去的工程下。<br/>
   比如路径为https://github.com/OwenTse/ExamDemo.git   其中OwenTse为gitHub Username<br/>
   考试结束截止时间考试程序会根据各位提供的GitHub Username去拉取代码，后进行自动的单元测试<br/>
+
