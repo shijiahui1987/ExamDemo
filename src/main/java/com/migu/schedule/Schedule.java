@@ -86,6 +86,7 @@ public class Schedule {
                 ServerNode curNode = nodes.get(curNodePos);
                 curNode.deleteTask(taskId);
             }
+            allTasks.remove(taskId);
             taskPos.remove(taskId);
             return ReturnCodeKeys.E011;
         }
@@ -105,12 +106,8 @@ public class Schedule {
 
         List<Map.Entry<Integer, Task>> infoIds = new ArrayList<Map.Entry<Integer, Task>>(allTasks.entrySet());
         // 对HashMap中的key 进行排序
-        Collections.sort(infoIds, new Comparator<Map.Entry<Integer, Task>>() {
-            public int compare(Map.Entry<Integer, Task> o1,
-                               Map.Entry<Integer, Task> o2) {
-                return o1.getKey().compareTo(o2.getKey());
-            }
-        });
+        Collections.sort(infoIds, (o1, o2) -> o1.getKey().compareTo(o2.getKey()));
+
         for (int i = 0; i < infoIds.size(); i++) {
             tasks.add(infoIds.get(i).getValue());
         }
